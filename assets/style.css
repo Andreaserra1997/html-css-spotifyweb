@@ -20,6 +20,7 @@ html {
     flex-direction: row-reverse;
     align-items: center;
     background-color: #080B12;
+    opacity: 50%;
 }
 
 .btn {
@@ -41,7 +42,7 @@ html {
 
 .left-bar {
     width: 230px;
-    background-color: green;
+    background-color: black;
 }
 
 /* end left-bar */
@@ -54,6 +55,8 @@ html {
     padding-top: 90px;
     overflow-y: auto;
     background-color: #141922;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
 }
 
 .first-list {
@@ -72,29 +75,36 @@ html {
 }
 
 .top-title {
-    padding: 4rem 1rem 2rem;
+    padding: 4rem 0 2rem;
     color: white;
 }
 
-/* start played-card */
-
-.played-container {
+.played-container,
+.listening-container,
+.popular-container {
     display: flex;
     gap: 1rem;
 }
 
-.played-card {
-    width: calc(100% - 6 * 1rem / 6);
+.played-card,
+.listening-card,
+.popular-card {
+    width: calc((100% - 5 * 1rem) / 6);
 }
 
-.played-card img {
+.played-card img,
+.listening-card img,
+.popular-card img {
     width: 100%;
 }
 
-.played-card h3 {
+.played-card h3,
+.listening-card h3,
+.popular-card h3 {
     padding-top: 1rem;
     font-size: 1.4rem;
     color: white;
+    text-align: center;
 }
 
 .played-card h5 {
@@ -103,52 +113,27 @@ html {
     color: #7D7F83;
 }
 
-.played-card h3,
 .played-card h5 {
     text-align: center;
 }
 
-.played-container .start {
-    margin-left: 1.5rem;
-}
-
-.played-container .end {
-    margin-right: 2rem;
-}
-
-/* end played-card */
-
-.created {
-    padding: 3rem 1rem .7rem;
+.created,
+.popular {
+    padding: 3rem 0 .7rem;
     color: white;
 }
 
 .listening {
-    padding: 0 1rem 2rem;
+    padding-bottom: 2rem;
     color: #7D7F83;
 }
 
-.listening-container {
-    display: flex;
-    gap: 1rem;
+.popular-card img {
+    border-radius: 50%;
 }
 
-.listening-card {
-    width: calc(15.6666% - 1rem / 6);
-    background-color: aqua;
-    height: 230px;
-}
-
-.listening-card img {
-    width: 100%;
-}
-
-.listening-container .start {
-    margin-left: 1.5rem;
-}
-
-.listening-container .end {
-    margin-right: 2rem;
+.popular-container {
+    padding-bottom: 4rem;
 }
 /* end content-center */
 
@@ -157,7 +142,7 @@ html {
 
 .down-bar {
     height: 90px;
-    background-color: red;
+    background-color: #282828;
 }
 
 /* end down-bar */
