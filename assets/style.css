@@ -74,6 +74,12 @@ html {
     color: #7A7D81;
 }
 
+.under-line {
+    width: 30px;
+    padding-top: 5px;
+    border-bottom: 2px solid #ADFF2F;
+}
+
 .top-title {
     padding: 4rem 0 2rem;
     color: white;
@@ -141,8 +147,56 @@ html {
 /* start down-bar */
 
 .down-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
     height: 90px;
     background-color: #282828;
 }
 
+.left-down {
+    display: flex;
+    align-items: center;
+}
+
+.left-down img {
+    width: 42px;
+    height: 42px;
+}
+
+.left-down h5,
+.left-down h6 {
+    padding-left: 10px;
+    color: white;
+}
+
+.left-down h5 {
+    font-size: .7rem;
+}
+
+.left-down h6 {
+    font-size: .6rem;
+    color: #848484;
+}
+
+.text-left {
+    padding-right: 40px;
+}
+
+.left-down i {
+    padding-right: 12px;
+    color: #848484;
+}
+
+.center-down {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-down {
+    height: 45px;
+    width: 45px;
+    background-color: blue;
+}
 /* end down-bar */
