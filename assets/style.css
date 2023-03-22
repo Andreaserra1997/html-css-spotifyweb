@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.top-bar {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: blue;
+}
+
+.flex-left-center {
+    display: flex;
+}
+
+.left-bar {
+    height: calc(100vh - 90px);
+    width: 230px;
+    background-color: green;
+}
+
+.content-center {
+    height: calc(100vh - 90px);
+    width: calc(100% - 230px);
+    padding-top: 90px;
+    overflow-y: auto;
+}
+
+.down-bar {
+    height: 90px;
+    background-color: red;
+}
