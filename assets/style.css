@@ -4,34 +4,126 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* start top bar */
+
 .top-bar {
     height: 90px;
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: blue;
+    left: 230px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #080B12;
 }
+
+.btn {
+    padding: 1rem 3rem 1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    background-color: #080B12;
+}
+
+/* end top-bar */
 
 .flex-left-center {
     display: flex;
 }
 
+/* start left-bar */
+
 .left-bar {
-    height: calc(100vh - 90px);
     width: 230px;
     background-color: green;
 }
+
+/* end left-bar */
+
+/* start content-center */
 
 .content-center {
     height: calc(100vh - 90px);
     width: calc(100% - 230px);
     padding-top: 90px;
     overflow-y: auto;
+    background-color: #141922;
 }
+
+.first-list {
+    display: flex;
+    justify-content: center;
+}
+
+.first-list li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.first-list a {
+    text-decoration: none;
+    color: #7A7D81;
+}
+
+.top-title {
+    padding: 4rem  1rem 2rem;
+    color: white;
+}
+
+/* start played-card */
+
+.played-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.played-card {
+    width: calc(100% - 6 * 1rem / 6);
+}
+
+.played-card img {
+    width: 100%;
+}
+
+.played-card h3 {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.played-card h5 {
+    padding-top: .5rem;
+    font-size: 1.1rem;
+    color: #7D7F83;
+}
+
+.played-card h3,
+.played-card h5 {
+    text-align: center;
+}
+
+.start {
+    margin-left: 1.5rem;
+}
+
+.end {
+    margin-right: 2rem;
+}
+
+/* end content-center */
+
+
+/* start down-bar */
 
 .down-bar {
     height: 90px;
     background-color: red;
 }
+
+/* end down-bar */
