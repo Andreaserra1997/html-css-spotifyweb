@@ -45,6 +45,35 @@ html {
     background-color: black;
 }
 
+.logo {
+    padding: 1rem 4.5rem 0 1rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.top-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5.5rem 2rem 2rem;
+}
+
+.top-list li {
+    display: flex;
+    align-items: center;
+}
+
+.top-list img {
+    width: 40%;
+    padding-top: 10px;
+}
+
+.top-list span {
+    padding-left: 1rem;
+    color: white;
+}
+
 /* end left-bar */
 
 /* start content-center */
@@ -67,17 +96,23 @@ html {
 .first-list li {
     list-style: none;
     padding: 1rem;
+    position: relative;
+}
+
+.first-list li:first-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 35%;
+    bottom: 0;
+    left: 35%;
+    height: 2px;
+    background-color: #ADFF2F;
 }
 
 .first-list a {
     text-decoration: none;
     color: #7A7D81;
-}
-
-.under-line {
-    width: 30px;
-    padding-top: 5px;
-    border-bottom: 2px solid #ADFF2F;
 }
 
 .top-title {
