@@ -10,6 +10,12 @@
     }
 }
 
+@media (max-width: 1070px) {
+    .first-list {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 700px) {
     .played-container {
         flex-wrap: wrap;
@@ -19,5 +25,39 @@
     .listening-card,
     .popular-card {
         width: calc((100% - 1rem) / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .left-bar {
+        width: 50px;
+        padding: 0;
+    }
+
+    .top-bar {
+        left: 50px;
+    }
+
+    .content-center {
+        width: calc(100% - 50px);
+    }
+
+    .none,
+    .apk::after {
+        display: none;
+    }
+
+    .end-list {
+        margin-inline: auto;
+    }
+    
+    .little-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .little-img img {
+        padding-top: 1rem;
     }
 }

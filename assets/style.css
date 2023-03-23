@@ -16,6 +16,7 @@ html {
     top: 0;
     right: 0;
     left: 230px;
+    z-index: 99;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -41,12 +42,29 @@ html {
 /* start left-bar */
 
 .left-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 230px;
+    padding-left: 1rem;
+    color: #5C5C5C;
     background-color: black;
 }
 
+.little-img {
+    display: none;
+}
+
+.little-img img {
+    width: 30px;
+}
+
 .logo {
-    padding: 1rem 4.5rem 0 1rem;
+    padding: 1rem 4.5rem 0 0;
 }
 
 .logo img {
@@ -56,7 +74,7 @@ html {
 .top-list {
     display: flex;
     flex-direction: column;
-    padding: 2rem 5.5rem 2rem 2rem;
+    padding: 2rem 5.5rem 2rem 0;
 }
 
 .top-list li {
@@ -65,13 +83,84 @@ html {
 }
 
 .top-list img {
-    width: 40%;
-    padding-top: 10px;
+    width: 35%;
+    padding-bottom: 10px;
+}
+.top-list span {
+    padding-bottom: 10px;
+    padding-left: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-.top-list span {
-    padding-left: 1rem;
+.title-playlist {
+    font-size: .9rem;
+    font-weight: 800;
     color: white;
+}
+
+.add-playlist {
+    padding-top: .8rem;
+    color: #5C5C5C;
+}
+
+.fa-plus {
+    padding: .7rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: black;
+    background-color: #A3A3A3;
+}
+
+.name-playlist li {
+    padding-top: 1.7rem;
+    font-weight: bold;
+    list-style: none;
+    color: #5C5C5C;
+}
+
+.end-list {
+    padding-bottom: 1rem;
+}
+
+.apk {
+    white-space: nowrap;
+    padding-bottom: .5rem;
+}
+
+.apk img {
+    width: 20px;
+    height: 20px;
+}
+
+.apk span {
+    padding-left: .7rem;
+}
+
+.apk::after {
+    content: "";
+    display: block;
+    margin-top: .5rem;
+    height: 1px;
+    width: 200px;
+    background-color: #5C5C5C;
+}
+
+.profile {
+    display: flex;
+    white-space: nowrap;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #808080;
+}
+
+.profile span {
+    font-weight: bold;
+    padding-left: .7rem;
 }
 
 /* end left-bar */
@@ -79,6 +168,9 @@ html {
 /* start content-center */
 
 .content-center {
+    position: fixed;
+    right: 0;
+    top: 0;
     height: calc(100vh - 90px);
     width: calc(100% - 230px);
     padding-top: 90px;
@@ -182,6 +274,11 @@ html {
 /* start down-bar */
 
 .down-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
