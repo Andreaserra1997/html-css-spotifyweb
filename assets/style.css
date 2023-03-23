@@ -33,11 +33,11 @@ html {
     background-color: #080B12;
 }
 
-/* end top-bar */
-
-.flex-left-center {
-    display: flex;
+.btn:hover {
+    transform: scale(1.2);
 }
+
+/* end top-bar */
 
 /* start left-bar */
 
@@ -86,11 +86,19 @@ html {
     width: 35%;
     padding-bottom: 10px;
 }
+
 .top-list span {
     padding-bottom: 10px;
     padding-left: 1rem;
     font-weight: bold;
     white-space: nowrap;
+}
+
+.top-list span:hover,
+.add-playlist span:hover,
+.name-playlist li:hover,
+.end-list span:hover {
+    color: white;
 }
 
 .title-playlist {
@@ -191,6 +199,10 @@ html {
     position: relative;
 }
 
+.first-list a:hover {
+    color: white;
+}
+
 .first-list li:first-child::after {
     content: "";
     display: block;
@@ -223,6 +235,37 @@ html {
 .listening-card,
 .popular-card {
     width: calc((100% - 5 * 1rem) / 6);
+}
+
+
+.played-card img:hover,
+.listening-card img:hover,
+.popular-card img:hover {
+    opacity: 50%;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+}
+
+.hover-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.hover-card .fa-circle-play {
+    font-size: 4rem;
+    color: white;
+}
+
+.played-card:hover .hover-card,
+.listening-card:hover .hover-card,
+.popular-card:hover .hover-card {
+    opacity: 1;
 }
 
 .played-card img,
@@ -341,7 +384,7 @@ html {
     padding-inline: .5rem;
 }
 
-.fa-circle-play {
+.keys .fa-circle-play {
     font-size: 1.5rem;
 }
 
