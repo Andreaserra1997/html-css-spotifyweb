@@ -282,6 +282,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10%;
     padding-inline: 10px;
     height: 90px;
     background-color: #282828;
@@ -290,6 +291,7 @@ html {
 .left-down {
     display: flex;
     align-items: center;
+    width: 15%;
 }
 
 .left-down img {
@@ -324,11 +326,70 @@ html {
 .center-down {
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: .5rem;
+    color: white;
+}
+
+.keys i {
+    padding-inline: .5rem;
+}
+
+.fa-circle-play {
+    font-size: 1.5rem;
+}
+
+.music-bar {
+    display: flex;
+    color: white;
+}
+
+.music-bar .line-bar-white {
+    width: 30%;
+    height: 4px;
+    align-self: center;
+    margin-left: 1.8rem;
+    background-color: white;
+}
+
+.music-bar .line-bar {
+    width: 60%;
+    height: 4px;
+    align-self: center;
+    margin-right: 1.8rem;
+    background-color: #5A5A5A;
 }
 
 .right-down {
-    height: 45px;
-    width: 45px;
-    background-color: blue;
+    width: 15%;
+    display: flex;
+    color: white;
 }
+
+.right-down i {
+    padding-inline: .5rem;
+}
+
+.right-down .line-bar-white {
+    width: 20%;
+    height: 4px;
+    align-self: center;
+    margin-left: .4rem;
+    background-color: white;
+}
+
+.right-down .line-bar {
+    width: 60%;
+    height: 4px;
+    align-self: center;
+    margin-right: .4rem;
+    background-color: #5A5A5A;
+}
+
 /* end down-bar */
