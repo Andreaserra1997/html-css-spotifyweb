@@ -334,7 +334,7 @@ html {
 .left-down {
     display: flex;
     align-items: center;
-    width: 15%;
+    min-width: min-content;
 }
 
 .left-down img {
@@ -359,6 +359,11 @@ html {
 
 .text-left {
     padding-right: 40px;
+}
+
+.icon-left-down {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .left-down i {
@@ -388,6 +393,10 @@ html {
     font-size: 1.5rem;
 }
 
+.keys .fa-circle-play:hover {
+    transform: scale(1.2);
+}
+
 .music-bar {
     display: flex;
     color: white;
@@ -396,10 +405,32 @@ html {
 .music-bar .line-bar-white {
     width: 30%;
     height: 4px;
+    position: relative;
     align-self: center;
     margin-left: 1.8rem;
     background-color: white;
 }
+
+.music-bar .line-bar-white:hover,
+.total-line .line-bar-white:hover {
+    cursor: pointer;
+    background-color: #ADFF2F;
+}
+
+.music-bar .line-bar-white:hover::after,
+.total-line .line-bar-white:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
 
 .music-bar .line-bar {
     width: 60%;
@@ -410,7 +441,7 @@ html {
 }
 
 .right-down {
-    width: 15%;
+    width: 20%;
     display: flex;
     color: white;
 }
@@ -422,7 +453,7 @@ html {
 .total-line {
     display: flex;
     width: 100%;
-    min-width: 40%;
+    min-width: min-content;
 }
 
 .right-down .line-bar-white {
@@ -431,6 +462,7 @@ html {
     align-self: center;
     margin-left: .4rem;
     background-color: white;
+    position: relative;
 }
 
 .right-down .line-bar {
