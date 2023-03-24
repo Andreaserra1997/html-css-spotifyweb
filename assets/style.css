@@ -419,6 +419,12 @@ html {
     padding-inline: .5rem;
 }
 
+.total-line {
+    display: flex;
+    width: 100%;
+    min-width: 40%;
+}
+
 .right-down .line-bar-white {
     width: 20%;
     height: 4px;
